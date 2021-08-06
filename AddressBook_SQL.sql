@@ -74,3 +74,7 @@ where FirstName='Pramela'
 update Address_Book_Table
 set AddressBookName='Manager',Type='Profession'
 where FirstName='Meena'
+
+select Count(*) as NumberOfContacts,Type
+from Address_Book_Table
+Group by Type
