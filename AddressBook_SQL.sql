@@ -27,7 +27,17 @@ Update Address_Book_Table
 set Email='AnitaYadav@gmail.com'
 where FirstName='Anita'
 
+EXEC Sp_rename 'Address_Book_Table.SecondName', 'LastName', 'COLUMN'
+Update Address_Book_Table
+set Address='836 Heritage Road'
+where FirstName='Rujula' and LastName='Mathialagan';
 
 delete 
 from Address_Book_Table
-where FirstName='Anita' 
+where FirstName='Rujula' and LastName='Mathialagan';
+
+select * from Address_Book_Table;
+
+select * 
+from Address_Book_Table
+where City='Bangalore' or State='Karnataka'
