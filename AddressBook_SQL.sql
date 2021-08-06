@@ -26,3 +26,8 @@ select * from Address_Book_Table
 Update Address_Book_Table
 set Email='AnitaYadav@gmail.com'
 where FirstName='Anita'
+
+
+delete 
+from Address_Book_Table
+where FirstName='Anita' 
