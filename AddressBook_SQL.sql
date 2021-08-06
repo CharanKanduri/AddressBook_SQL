@@ -20,3 +20,9 @@ values('Harsha','Vargheese','645 Catherine Street','Bangalore','Karnataka',24300
 ('Anita','Yadav','19 Augusta Avenue','Lucknow','Uttar Pradesh',113201,87210505053,'anita@gmail.com'),
 ('Pramela','Satesh','356 Newburgh','Bangalore','Karnataka',243001,9842905050,'Pramela@gmail.com');
 select * from Address_Book_Table
+
+------ UC 4: Ability to Edit Contact Person Based on their Name ------
+--Edit Email based on Name--
+Update Address_Book_Table
+set Email='AnitaYadav@gmail.com'
+where FirstName='Anita'
