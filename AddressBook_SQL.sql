@@ -41,3 +41,16 @@ select * from Address_Book_Table;
 select * 
 from Address_Book_Table
 where City='Bangalore' or State='Karnataka'
+
+------ UC 7: Ability to Retrieve Count of Person belonging to a City or State ------
+
+select Count(*) as count ,state,City
+from Address_Book_Table
+Group by state,City
+
+------ UC 8: Ability to retrieve entries sorted alphabetically ------
+
+select *
+from Address_Book_Table
+where City='Bangalore'
+order by(FirstName)
